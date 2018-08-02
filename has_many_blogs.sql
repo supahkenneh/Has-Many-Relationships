@@ -35,3 +35,6 @@ CREATE TABLE comments (
   post_id          integer                   NOT NULL  REFERENCES posts (post_id)
 );
 
+CREATE INDEX ON users (users_id);
+CREATE INDEX ON posts (post_id);
+CREATE INDEX ON comments (comment_id);
